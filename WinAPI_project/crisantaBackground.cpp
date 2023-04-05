@@ -16,15 +16,15 @@ namespace BP
 	void crisantaBackground::initialize()
 	{
 		mImage = bpResources::load<image>(L"backgroundMenu", L"..\\Resource\\crisantaBackground\\crisanta-bg-main-menu-animation_0000_Capa-15_0000_crisanta-bg-main-menu-animation_0014_Capa-1.bmp");
-
+		
 		gameObject::initialize();
-		//transformation* trns = getComponent<transformation>();
-		//vector2 pos = trns->getPosition();
+		transformation* trns = getComponent<transformation>();
+		vector2 pos = trns->getPosition();
 
-		//pos.x = 0;
-		//pos.y = 0;
+		pos.x = 0;
+		pos.y = 0;
 
-		//trns->setPosition(pos);
+		trns->setPosition(pos);
 	}
 
 	void crisantaBackground::update()

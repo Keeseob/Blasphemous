@@ -4,6 +4,7 @@
 
 namespace BP
 {
+	class rigidBody;
 	class bossBackground : public gameObject
 	{
 	public:
@@ -23,6 +24,7 @@ namespace BP
 	private:
 		image* mImage;
 		eBackgroundtState mState;
+		rigidBody* mRigidBody;
 		void bgRight();
 		void bgLeft();
 	};

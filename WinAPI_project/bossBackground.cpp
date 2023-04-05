@@ -2,7 +2,8 @@
 #include "sceneManager.h"
 #include "bpResources.h"
 #include "transformation.h"
-//#include "keyInput.h"
+#include "keyInput.h"
+#include "time.h"
 
 namespace BP
 {
@@ -21,14 +22,14 @@ namespace BP
 		vector2 pos = trns->getPosition();
 		trns->setPosition(vector2(pos.x, pos.y - 20));
 
-		//mState = eBackgroundtState::bgRight;
+		mState = eBackgroundtState::bgRight;
 
 		gameObject::initialize();
 	}
 
 	void bossBackground::update()
 	{
-		/*switch (mState)
+		switch (mState)
 		{
 		case BP::bossBackground::eBackgroundtState::bgRight:bgRight();
 			break;
@@ -36,7 +37,7 @@ namespace BP
 			break;
 		default:
 			break;
-		}*/
+		}
 
 		gameObject::update();
 	}
@@ -65,34 +66,35 @@ namespace BP
 
 	void bossBackground::bgRight()
 	{
-		//transformation* trns = getComponent<transformation>();
-		//vector2 pos = trns->getPosition();
+		transformation* trns = getComponent<transformation>();
+		vector2 pos = trns->getPosition();
 
-		//if (keyInput::getKey(eKeyCode::A))
-		//{
-		//	mState = eBackgroundtState::bgLeft;
-		//}
-		//if (keyInput::getKey(eKeyCode::D))
-		//{
-		//	//mRigidBody->addForce(vector2(100.0f, 0.0f));
-		//	pos.x += 30.0f * time::deltaTime();
-		//}
-		//trns->setPosition(pos);
+		if (keyInput::getKey(eKeyCode::A))
+		{
+			mState = eBackgroundtState::bgLeft;
+		}
+		if (keyInput::getKey(eKeyCode::D))
+		{
+			//mRigidBody->addForce(vector2(100.0f, 0.0f));
+			pos.x += 20.0f * time::deltaTime();
+		}
+		trns->setPosition(pos);
 	}
 
 	void bossBackground::bgLeft()
 	{
-		//transformation* trns = getComponent<transformation>();
-		//vector2 pos = trns->getPosition();
+		transformation* trns = getComponent<transformation>();
+		vector2 pos = trns->getPosition();
 
-		//if (keyInput::getKey(eKeyCode::D))
-		//{
-		//	mState = eBackgroundtState::bgRight;
-		//}
-		//if (keyInput::getKey(eKeyCode::A))
-		//{
-		//	pos.x -= 30.0f * time::deltaTime();
-		//}
-		//trns->setPosition(pos);
+		if (keyInput::getKey(eKeyCode::D))
+		{
+			mState = eBackgroundtState::bgRight;
+		}
+		if (keyInput::getKey(eKeyCode::A))
+		{
+			//mRigidBody->addForce(vector2(100.0f, 0.0f));
+			pos.x -= 20.0f * time::deltaTime();
+		}
+		trns->setPosition(pos);
 	}
 }

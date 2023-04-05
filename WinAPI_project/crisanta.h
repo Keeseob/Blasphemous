@@ -4,7 +4,6 @@
 
 namespace BP
 {
-	class animator;
 	class crisanta : public gameObject
 	{
 	public:
@@ -18,6 +17,5 @@ namespace BP
 
 	private:
 		image* mCrisantaImage;
-		animator* mAnimator;
 	};
 }

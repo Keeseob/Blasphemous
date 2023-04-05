@@ -19,20 +19,20 @@ namespace BP
 	void crisanta::initialize()
 	{
 		//mCrisantaImage = bpResources::load<image>(L"crisanta", L"..\\Resource\\crisantaMenu_anim\\crisanta-main-menu-animation_0013_Capa-1.bmp");
-		image* Crisanta = bpResources::load<image>(L"crisantaMenu_anim_p", L"..\\Resource\\crisantaMenu_anim_p.bmp");
+		//image* Crisanta = bpResources::load<image>(L"crisantaMenu_anim_p", L"..\\Resource\\crisantaMenu_anim_p.bmp");
+		mCrisantaImage = bpResources::load<image>(L"crisantaMenu_anim_p", L"..\\Resource\\crisantaMenu\\crisanta-main-menu-animation_0013_Capa-1.bmp");
 
 		//mAnimator->createAnimations(L"..\\Resource\\crisantaMenu_anim", vector2(0,0), 0.1f);
 		transformation* trns = getComponent<transformation>();
-		mAnimator = addComponent<animator>();
 		//mAnimator = addComponent<animator>();
-		//mAnimator->createAnimations(L"..\\Resource\\crisantaMenu_anim", vector2::zero, 0.1f);
-		mAnimator->createAnimation(L"crisantaMenu_anim_p", Crisanta, vector2::zero, 0, 5, 5, vector2(0.0f, 0.0f), 0.1);
-		mAnimator->play(L"crisantaMenu_anim_p", true);
+		////mAnimator = addComponent<animator>();
+		////mAnimator->createAnimations(L"..\\Resource\\crisantaMenu_anim", vector2::zero, 0.1f);
+		//mAnimator->createAnimation(L"crisantaMenu_anim_p", Crisanta, vector2::zero, 0, 5, 5, vector2(0.0f, 0.0f), 0.1);
+		//mAnimator->play(L"crisantaMenu_anim_p", true);
 
-		//transformation* trns = getComponent<transformation>();
-		//vector2 pos = trns->getPosition();
+		vector2 pos = trns->getPosition();
 
-		//trns->setPosition(pos);
+		trns->setPosition(pos);
 
 		gameObject::initialize();
 	}

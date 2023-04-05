@@ -67,8 +67,6 @@ namespace BP
 
 		mDistance = mLookPosition - (mResolution / 2.0f);
 
-
-
 		if (mAlphaTime < mEndTime)
 		{
 			//255 = 1
