@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="WinAPI">
+      <UniqueIdentifier>{152ff545-2838-467f-bcc6-0f818c50d6d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{e093be10-a6ee-4b27-9c1b-62ed3a8142df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\High Level Interface">
+      <UniqueIdentifier>{f82af948-10ec-4d80-9ae2-92a528828ef6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Essentials">
+      <UniqueIdentifier>{e2844d46-af47-4e2d-be72-af166c076823}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Scenes">
+      <UniqueIdentifier>{910c82da-e0ba-454a-9786-9a0ffd818dbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Scenes\Action Scene">
+      <UniqueIdentifier>{3b64e6d7-a5cf-4d10-8eb7-f1f3f09764f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Components">
+      <UniqueIdentifier>{11176e37-774b-43d1-9437-63d23d0070dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Layers">
+      <UniqueIdentifier>{bf37b475-4df9-4b47-9bf6-2e162596ea26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents">
+      <UniqueIdentifier>{7810928c-90ee-4fa4-88c7-08e99ac9bdf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Time">
+      <UniqueIdentifier>{7d27de68-8f17-40a5-97bb-9ef235850269}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Input">
+      <UniqueIdentifier>{c10c1af8-83fe-4343-b77c-93514f6c2034}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource">
+      <UniqueIdentifier>{ce59ec6d-08fa-485b-8af7-ce10dddd4dae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Scenes\Title Scene">
+      <UniqueIdentifier>{3c633bf0-a5c2-40a2-9e70-f912246f649a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Player">
+      <UniqueIdentifier>{067a46e4-d91a-48da-a5b0-2ce0bd00239d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Layers\Objects">
+      <UniqueIdentifier>{3ba6ef47-c02d-48a1-9512-847dfb5b5a1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Projectile">
+      <UniqueIdentifier>{5309162d-431a-4210-84ca-952bd9d0dd16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Monster">
+      <UniqueIdentifier>{b90dd166-660f-4b99-8e75-1651eae4d2c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Collider">
+      <UniqueIdentifier>{9ac4fa9f-72a6-46e0-a266-e8ef8a5f2cf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Animation">
+      <UniqueIdentifier>{415a1e31-0b37-4696-9c7b-feb4bd60da3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Rigid Body">
+      <UniqueIdentifier>{d6dceb59-74d0-4408-8df7-7743ad346f3e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>WinAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>WinAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>WinAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="WinAPI_project.h">
+      <Filter>WinAPI</Filter>
+    </ClInclude>
+    <ClInclude Include="entity.h">
+      <Filter>Engine\Layers\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="application.h">
+      <Filter>Engine\High Level Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="engine.h">
+      <Filter>Engine\Essentials</Filter>
+    </ClInclude>
+    <ClInclude Include="enumPack.h">
+      <Filter>Engine\Essentials</Filter>
+    </ClInclude>
+    <ClInclude Include="includePack.h">
+      <Filter>Engine\Essentials</Filter>
+    </ClInclude>
+    <ClInclude Include="mathPack.h">
+      <Filter>Engine\Essentials</Filter>
+    </ClInclude>
+    <ClInclude Include="component.h">
+      <Filter>Engine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="layer.h">
+      <Filter>Engine\Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="actionScene.h">
+      <Filter>Engine\Scenes\Action Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="gameObject.h">
+      <Filter>Engine\Layers\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="time.h">
+      <Filter>Engine\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="keyInput.h">
+      <Filter>Engine\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="bpResource.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="bpResources.h">
+      <Filter>Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="image.h" />
+    <ClInclude Include="titleScene.h">
+      <Filter>Engine\Scenes\Title Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="transformation.h">
+      <Filter>Engine\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="penitentOne.h">
+      <Filter>Contents\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="crisantaBackground.h">
+      <Filter>Engine\Scenes\Title Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="crisanta.h">
+      <Filter>Engine\Scenes\Title Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="bossBackground.h">
+      <Filter>Engine\Scenes\Action Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="projectile.h">
+      <Filter>Contents\Projectile</Filter>
+    </ClInclude>
+    <ClInclude Include="elderBrother.h">
+      <Filter>Contents\Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="collider.h">
+      <Filter>Engine\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="animator.h">
+      <Filter>Engine\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="animation.h">
+      <Filter>Engine\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="collisionManager.h">
+      <Filter>Engine\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="scene.h">
+      <Filter>Engine\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="sceneManager.h">
+      <Filter>Engine\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="camera.h" />
+    <ClInclude Include="object.h" />
+    <ClInclude Include="rigidBody.h">
+      <Filter>Engine\Rigid Body</Filter>
+    </ClInclude>
+    <ClInclude Include="ground.h" />
+    <ClInclude Include="toolScene.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WinAPI_project.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="WinAPI_project.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="..\Resource\main_icon.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="WinAPI_project.cpp">
+      <Filter>WinAPI</Filter>
+    </ClCompile>
+    <ClCompile Include="entity.cpp">
+      <Filter>Engine\Layers\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="application.cpp">
+      <Filter>Engine\High Level Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="mathPack.cpp">
+      <Filter>Engine\Essentials</Filter>
+    </ClCompile>
+    <ClCompile Include="component.cpp">
+      <Filter>Engine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="layer.cpp">
+      <Filter>Engine\Layers</Filter>
+    </ClCompile>
+    <ClCompile Include="actionScene.cpp">
+      <Filter>Engine\Scenes\Action Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="gameObject.cpp">
+      <Filter>Engine\Layers\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="time.cpp">
+      <Filter>Engine\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="keyInput.cpp">
+      <Filter>Engine\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="bpResource.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="bpResources.cpp">
+      <Filter>Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="image.cpp" />
+    <ClCompile Include="titleScene.cpp">
+      <Filter>Engine\Scenes\Title Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="transformation.cpp">
+      <Filter>Engine\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="penitentOne.cpp">
+      <Filter>Contents\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="crisantaBackground.cpp">
+      <Filter>Engine\Scenes\Title Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="crisanta.cpp">
+      <Filter>Engine\Scenes\Title Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="bossBackground.cpp">
+      <Filter>Engine\Scenes\Action Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="projectile.cpp">
+      <Filter>Contents\Projectile</Filter>
+    </ClCompile>
+    <ClCompile Include="elderBrother.cpp">
+      <Filter>Contents\Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="collider.cpp">
+      <Filter>Engine\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="animation.cpp">
+      <Filter>Engine\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="animator.cpp">
+      <Filter>Engine\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="collisionManager.cpp">
+      <Filter>Engine\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="scene.cpp">
+      <Filter>Engine\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="sceneManager.cpp">
+      <Filter>Engine\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="camera.cpp" />
+    <ClCompile Include="rigidBody.cpp">
+      <Filter>Engine\Rigid Body</Filter>
+    </ClCompile>
+    <ClCompile Include="ground.cpp" />
+    <ClCompile Include="toolScene.cpp" />
+  </ItemGroup>
+</Project>
