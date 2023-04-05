@@ -15,7 +15,7 @@ namespace BP
 		mScene.resize((UINT)eSceneType::end);
 		mScene[(UINT)eSceneType::title] = new titleScene();
 		mScene[(UINT)eSceneType::play] = new actionScene();
-		mScene[(UINT)eSceneType::tool] = new toolScene();
+		//mScene[(UINT)eSceneType::tool] = new toolScene();
 
 		for (scene* scn : mScene)
 		{

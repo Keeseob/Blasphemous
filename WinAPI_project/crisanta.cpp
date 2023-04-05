@@ -20,7 +20,7 @@ namespace BP
 	{
 		//mCrisantaImage = bpResources::load<image>(L"crisanta", L"..\\Resource\\crisantaMenu_anim\\crisanta-main-menu-animation_0013_Capa-1.bmp");
 		//image* Crisanta = bpResources::load<image>(L"crisantaMenu_anim_p", L"..\\Resource\\crisantaMenu_anim_p.bmp");
-		mCrisantaImage = bpResources::load<image>(L"crisantaMenu_anim_p", L"..\\Resource\\crisantaMenu\\crisanta-main-menu-animation_0013_Capa-1.bmp");
+		mCrisantaImage = bpResources::load<image>(L"crisantaMenu_anim_p", L"..\\Resource\\crisantaMenu_anim\\crisanta-main-menu-animation_0013_Capa-1.bmp");
 
 		//mAnimator->createAnimations(L"..\\Resource\\crisantaMenu_anim", vector2(0,0), 0.1f);
 		transformation* trns = getComponent<transformation>();
