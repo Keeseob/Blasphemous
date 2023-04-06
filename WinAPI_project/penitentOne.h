@@ -25,6 +25,7 @@ namespace BP
 
 			crouchRight,
 			crouchLeft,
+			crouchRightDash,
 
 			attack,
 			attackL,
@@ -60,6 +61,7 @@ namespace BP
 
 		void crouchRight();
 		void crouchLeft();
+		void crouchRightDash();
 
 		void attack();
 		void attackL();

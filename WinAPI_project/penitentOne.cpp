@@ -101,6 +101,7 @@ namespace BP
 
 		case BP::penitentOne::ePenitentState::crouchRight: crouchRight(); break;
 		case BP::penitentOne::ePenitentState::crouchLeft: crouchLeft();	break;
+		case BP::penitentOne::ePenitentState::crouchRightDash: crouchRightDash(); break;
 
 		case BP::penitentOne::ePenitentState::attack: attack();	break;
 		case BP::penitentOne::ePenitentState::attackL: attackL(); break;
@@ -151,6 +152,12 @@ namespace BP
 		if (keyInput::getKey(eKeyCode::S))
 		{
 			mState = ePenitentState::crouchRight;
+			mAnimator->play(L"crouchRight", false);
+		}
+
+		if (keyInput::getKey(eKeyCode::I))
+		{
+			mState = ePenitentState::crouchRightDash;
 			mAnimator->play(L"crouchRight", false);
 		}
 
@@ -268,9 +275,6 @@ namespace BP
 		}
 		if (keyInput::getKey(eKeyCode::D))
 		{
-			//mState = ePenitentState::runRight;
-			//mAnimator->play(L"runRight", true);
-			//mRigidBody->addForce(vector2(200.0f, 0.0f));
 			pos.x += 200.0f * time::deltaTime();
 		}
 		trns->setPosition(pos);
@@ -355,6 +359,26 @@ namespace BP
 		trns->setPosition(pos);
 	}
 
+	void penitentOne::crouchRightDash()
+	{
+		transformation* trns = getComponent<transformation>();
+		vector2 pos = trns->getPosition();
+
+		if (keyInput::getKeyUp(eKeyCode::I))
+		{
+			mAnimator->play(L"idleRight", true);
+			mState = ePenitentState::idleRight;
+		}
+		if (keyInput::getKey(eKeyCode::I))
+		{
+			pos.x += 400.0f * time::deltaTime();
+		}
+		trns->setPosition(pos);
+	}
+
+
+
+
 	void penitentOne::attack()
 	{
 		transformation* trns = getComponent<transformation>();
@@ -367,7 +391,7 @@ namespace BP
 		}
 		if (keyInput::getKey(eKeyCode::K))
 		{
-			obj::instantiate<projectile>(vector2(190.0f, 700.0f), eLayerType::projectile, eSceneType::play);
+			obj::instantiate<projectile>(vector2(pos.x + 50.0f, pos.y), eLayerType::projectile, eSceneType::play);
 			trns->setPosition(pos);
 		}
 	}
@@ -384,7 +408,7 @@ namespace BP
 		}
 		if (keyInput::getKey(eKeyCode::K))
 		{
-			obj::instantiate<projectile>(vector2(190.0f, 700.0f), eLayerType::projectile, eSceneType::play);
+			obj::instantiate<projectile>(vector2(pos.x - 150.0f, pos.y), eLayerType::projectile, eSceneType::play);
 			trns->setPosition(pos);
 		}
 	}

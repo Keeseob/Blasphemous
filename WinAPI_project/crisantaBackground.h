@@ -18,5 +18,6 @@ namespace BP
 
 	private:
 		animator* mAnimator;
+		image* mImage;
 	};
 }

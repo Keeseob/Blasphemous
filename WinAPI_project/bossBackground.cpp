@@ -44,7 +44,6 @@ namespace BP
 
 	void bossBackground::render(HDC hdc)
 	{
-
 		transformation* trns = getComponent<transformation>();
 		vector2 pos = trns->getPosition();
 

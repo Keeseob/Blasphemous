@@ -25,26 +25,11 @@ namespace BP
 	void actionScene::initialize()
 	{
 		scene::initialize();
-		//camera::setTarget(mPenitentOne);
-
-		//mPenitentOne = new penitentOne();
-		//addGameObject(mPenitentOne, eLayerType::player);
 
 		obj::instantiate<penitentOne>(vector2(300.0f, 600.0f), eLayerType::player, eSceneType::play);
 		obj::instantiate<elderBrother>(vector2(900.0f, 550.0f), eLayerType::monster, eSceneType::play);
 		obj::instantiate<ground>(vector2(0.0f, 760.0f), eLayerType::ground, eSceneType::play);
 		obj::instantiate<bossBackground>(vector2(0.0f, 0.0f), eLayerType::background, eSceneType::play);
-
-		//elderBrother* elder = new elderBrother();
-		//addGameObject(elder, eLayerType::monster);
-
-		//elder = new elderBrother();
-		//addGameObject(elder, eLayerType::monster);
-
-		//mBossBackground = new bossBackground();
-		//addGameObject(mBossBackground, eLayerType::background);
-
-		//collisionManager::setLayer(eLayerType::player, eLayerType::monster, true);
 	}
 
 	void actionScene::update()
@@ -68,8 +53,6 @@ namespace BP
 
 	void actionScene::onEnter()
 	{
-
-
 		//Camera::SetLookRange(Vector2{ (float)application.GetWidth() * 5.0f, -(float)application.GetHeight() * 5.0f }
 		//);
 		//Camera::SetTarget(hero);
@@ -77,7 +60,6 @@ namespace BP
 		collisionManager::setLayer(eLayerType::player, eLayerType::monster, true);
 		collisionManager::setLayer(eLayerType::player, eLayerType::ground, true);
 		collisionManager::setLayer(eLayerType::monster, eLayerType::ground, true);
-
 	}
 
 	void actionScene::onExit()
