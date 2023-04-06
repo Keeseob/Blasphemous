@@ -3,8 +3,9 @@
 
 namespace BP
 {
-	class crisanta;
-	class crisantaBackground;
+	//class crisanta;
+	//class crisantaMenu_petals;
+	//class crisantaBackground;
 	class titleScene : public scene
 	{
 	public:
@@ -20,7 +21,8 @@ namespace BP
 		virtual void onExit() override;
 
 	private:
-		crisanta* mCrisanta;
-		crisantaBackground* mCrisantaBackground;
+		//crisanta* mCrisanta;
+		//crisantaMenu_petals* mCrisantaMenu_petals;
+		//crisantaBackground* mCrisantaBackground;
 	};
 }

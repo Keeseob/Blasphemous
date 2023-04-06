@@ -4,6 +4,7 @@
 
 namespace BP
 {
+	class animator;
 	class crisanta : public gameObject
 	{
 	public:
@@ -16,6 +17,6 @@ namespace BP
 		virtual void release() override;
 
 	private:
-		image* mCrisantaImage;
+		animator* mAnimator;
 	};
 }

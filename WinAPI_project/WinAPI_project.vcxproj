@@ -133,6 +133,8 @@
     <ClInclude Include="bossBackground.h" />
     <ClInclude Include="bpResource.h" />
     <ClInclude Include="camera.h" />
+    <ClInclude Include="crisantaMenu_fg_petals.h" />
+    <ClInclude Include="crisantaMenu_petals.h" />
     <ClInclude Include="collider.h" />
     <ClInclude Include="collisionManager.h" />
     <ClInclude Include="component.h" />
@@ -174,6 +176,8 @@
     <ClCompile Include="bossBackground.cpp" />
     <ClCompile Include="bpResource.cpp" />
     <ClCompile Include="camera.cpp" />
+    <ClCompile Include="crisantaMenu_fg_petals.cpp" />
+    <ClCompile Include="crisantaMenu_petals.cpp" />
     <ClCompile Include="collider.cpp" />
     <ClCompile Include="collisionManager.cpp" />
     <ClCompile Include="component.cpp" />

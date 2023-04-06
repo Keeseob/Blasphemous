@@ -171,6 +171,12 @@
     </ClInclude>
     <ClInclude Include="ground.h" />
     <ClInclude Include="toolScene.h" />
+    <ClInclude Include="crisantaMenu_petals.h">
+      <Filter>Engine\Scenes\Title Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="crisantaMenu_fg_petals.h">
+      <Filter>Engine\Scenes\Title Scene</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="WinAPI_project.rc">
@@ -274,5 +280,11 @@
     </ClCompile>
     <ClCompile Include="ground.cpp" />
     <ClCompile Include="toolScene.cpp" />
+    <ClCompile Include="crisantaMenu_petals.cpp">
+      <Filter>Engine\Scenes\Title Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="crisantaMenu_fg_petals.cpp">
+      <Filter>Engine\Scenes\Title Scene</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -81,7 +81,6 @@ namespace BP
 		//mAnimator->getCompleteEvent(L"idleLeft") = std::bind(&penitentOne::idleLeft, this);
 		//mAnimator->getEndEvent(L"jumpRight") = std::bind(&penitentOne::jumpRight, this);
 
-
 		gameObject::initialize();
 	}
 

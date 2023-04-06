@@ -5,11 +5,11 @@
 namespace BP
 {
 	class animator;
-	class crisantaBackground : public gameObject
+	class crisantaMenu_fg_petals : public gameObject
 	{
 	public:
-		crisantaBackground();
-		~crisantaBackground();
+		crisantaMenu_fg_petals();
+		~crisantaMenu_fg_petals();
 
 		virtual void initialize() override;
 		virtual void update() override;

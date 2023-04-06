@@ -1,30 +1,24 @@
 #include "crisantaBackground.h"
 #include "sceneManager.h"
 #include "bpResources.h"
-#include "transformation.h"
+#include "animator.h"
 
 namespace BP
 {
 	crisantaBackground::crisantaBackground()
 	{
 	}
-
 	crisantaBackground::~crisantaBackground()
 	{
 	}
 
 	void crisantaBackground::initialize()
 	{
-		mImage = bpResources::load<image>(L"backgroundMenu", L"..\\Resource\\crisantaBackground\\crisanta-bg-main-menu-animation_0000_Capa-15_0000_crisanta-bg-main-menu-animation_0014_Capa-1.bmp");
-		
+		mAnimator = addComponent<animator>();
+		mAnimator->createAnimations(L"..\\Resource\\crisantaBackground", vector2(400.0f, 500.0f), 0.2f);
+		mAnimator->play(L"ResourcecrisantaBackground", true);
+
 		gameObject::initialize();
-		transformation* trns = getComponent<transformation>();
-		vector2 pos = trns->getPosition();
-
-		pos.x = 0;
-		pos.y = 0;
-
-		trns->setPosition(pos);
 	}
 
 	void crisantaBackground::update()

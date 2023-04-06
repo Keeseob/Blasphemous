@@ -1,13 +1,14 @@
 #include "titleScene.h"
 #include "keyInput.h"
 #include "sceneManager.h"
+#include "crisantaMenu_fg_petals.h"
 #include "crisanta.h"
+#include "crisantaMenu_petals.h"
 #include "crisantaBackground.h"
 #include "penitentOne.h"
 #include "elderBrother.h"
 #include "collisionManager.h"
 #include "bossBackground.h"
-#include "transformation.h"
 #include "camera.h"
 #include "object.h"
 
@@ -19,6 +20,7 @@ namespace BP
 	titleScene::~titleScene()
 	{
 	}
+
 	void titleScene::initialize()
 	{
 		scene::initialize();
@@ -28,7 +30,9 @@ namespace BP
 
 		//obj::instantiate<penitentOne>(eLayerType::player);
 		//obj::instantiate<elderBrother>(eLayerType::monster);
+		obj::instantiate<crisantaMenu_fg_petals>(eLayerType::effect, eSceneType::title);
 		obj::instantiate<crisanta>(eLayerType::test, eSceneType::title);
+		obj::instantiate<crisantaMenu_petals>(eLayerType::projectile, eSceneType::title);
 		obj::instantiate<crisantaBackground>(eLayerType::background, eSceneType::title);
 
 		//elderBrother* elder = new elderBrother();
@@ -38,8 +42,6 @@ namespace BP
 		//addGameObject(mCrisanta, eLayerType::test);
 		//crisantaBackground* mCrisantaBackground = new crisantaBackground();
 		//addGameObject(mCrisantaBackground, eLayerType::background);
-
-
 	}
 	void titleScene::update()
 	{
@@ -47,7 +49,6 @@ namespace BP
 		{
 			sceneManager::loadScene(eSceneType::play);
 		}
-
 		scene::update();
 	}
 	void titleScene::render(HDC hdc)

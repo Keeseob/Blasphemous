@@ -38,12 +38,9 @@ namespace BP
 		std::vector<gameObject*> deleteGameObjects = {};
 		for (layer& lyr : mLayer)
 		{
-			std::vector<gameObject*>& gameObjects 
-				= lyr.getGameObject();
+			std::vector<gameObject*>& gameObjects = lyr.getGameObject();
 
-			for (std::vector<gameObject*>::iterator iter 
-				= gameObjects.begin();
-				iter != gameObjects.end();)
+			for (std::vector<gameObject*>::iterator iter = gameObjects.begin(); iter != gameObjects.end();)
 			{
 				if ((*iter)->getState() == gameObject::eState::death)
 				{
