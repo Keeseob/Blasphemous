@@ -132,6 +132,10 @@
     <ClInclude Include="animator.h" />
     <ClInclude Include="bossBackground.h" />
     <ClInclude Include="bpResource.h" />
+    <ClInclude Include="brotherhoodBackground2.h" />
+    <ClInclude Include="brotherhoodForeground.h" />
+    <ClInclude Include="brotherhoodSky.h" />
+    <ClInclude Include="brotherhoodVeryBackground.h" />
     <ClInclude Include="camera.h" />
     <ClInclude Include="crisantaMenu_fg_petals.h" />
     <ClInclude Include="crisantaMenu_petals.h" />
@@ -175,6 +179,10 @@
     <ClCompile Include="application.cpp" />
     <ClCompile Include="bossBackground.cpp" />
     <ClCompile Include="bpResource.cpp" />
+    <ClCompile Include="brotherhoodBackground2.cpp" />
+    <ClCompile Include="brotherhoodForeground.cpp" />
+    <ClCompile Include="brotherhoodSky.cpp" />
+    <ClCompile Include="brotherhoodVeryBackground.cpp" />
     <ClCompile Include="camera.cpp" />
     <ClCompile Include="crisantaMenu_fg_petals.cpp" />
     <ClCompile Include="crisantaMenu_petals.cpp" />

@@ -4,7 +4,11 @@
 #include "sceneManager.h"
 #include "elderBrother.h"
 #include "collisionManager.h"
+#include "brotherhoodForeground.h"
 #include "bossBackground.h"
+#include "brotherhoodBackground2.h"
+#include "brotherhoodVeryBackground.h"
+#include "brotherhoodSky.h"
 #include "transformation.h"
 #include "camera.h"
 #include "object.h"
@@ -29,7 +33,11 @@ namespace BP
 		obj::instantiate<penitentOne>(vector2(300.0f, 600.0f), eLayerType::player, eSceneType::play);
 		obj::instantiate<elderBrother>(vector2(900.0f, 550.0f), eLayerType::monster, eSceneType::play);
 		obj::instantiate<ground>(vector2(0.0f, 760.0f), eLayerType::ground, eSceneType::play);
+		obj::instantiate<brotherhoodForeground>(vector2(-100.0f, 0.0f), eLayerType::foreground, eSceneType::play);
 		obj::instantiate<bossBackground>(vector2(0.0f, 0.0f), eLayerType::background, eSceneType::play);
+		obj::instantiate<brotherhoodBackground2>(vector2(0.0f, 0.0f), eLayerType::background2, eSceneType::play);
+		obj::instantiate<brotherhoodVeryBackground>(vector2(0.0f, 0.0f), eLayerType::background3, eSceneType::play);
+		obj::instantiate<brotherhoodSky>(vector2(0.0f, 0.0f), eLayerType::background4, eSceneType::play);
 	}
 
 	void actionScene::update()

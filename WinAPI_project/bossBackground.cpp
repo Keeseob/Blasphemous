@@ -17,7 +17,7 @@ namespace BP
 	void bossBackground::initialize()
 	{
 		transformation* trns = getComponent<transformation>();
-		mImage = bpResources::load<image>(L"bossBackground", L"..\\Resource\\background\\brotherhood\\brotherhood_main.bmp");
+		mImage = bpResources::load<image>(L"bossBackground", L"..\\Resource\\background\\brotherhood\\brotherhood_background.bmp");
 
 		vector2 pos = trns->getPosition();
 		trns->setPosition(vector2(pos.x, pos.y - 20));
@@ -75,7 +75,7 @@ namespace BP
 		if (keyInput::getKey(eKeyCode::D))
 		{
 			//mRigidBody->addForce(vector2(100.0f, 0.0f));
-			pos.x += 20.0f * time::deltaTime();
+			//pos.x += 20.0f * time::deltaTime();
 		}
 		trns->setPosition(pos);
 	}
@@ -92,7 +92,7 @@ namespace BP
 		if (keyInput::getKey(eKeyCode::A))
 		{
 			//mRigidBody->addForce(vector2(100.0f, 0.0f));
-			pos.x -= 20.0f * time::deltaTime();
+			//pos.x -= 20.0f * time::deltaTime();
 		}
 		trns->setPosition(pos);
 	}

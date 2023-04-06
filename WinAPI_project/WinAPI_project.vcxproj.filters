@@ -177,6 +177,18 @@
     <ClInclude Include="crisantaMenu_fg_petals.h">
       <Filter>Engine\Scenes\Title Scene</Filter>
     </ClInclude>
+    <ClInclude Include="brotherhoodForeground.h">
+      <Filter>Engine\Scenes\Action Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="brotherhoodBackground2.h">
+      <Filter>Engine\Scenes\Action Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="brotherhoodVeryBackground.h">
+      <Filter>Engine\Scenes\Action Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="brotherhoodSky.h">
+      <Filter>Engine\Scenes\Action Scene</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="WinAPI_project.rc">
@@ -285,6 +297,18 @@
     </ClCompile>
     <ClCompile Include="crisantaMenu_fg_petals.cpp">
       <Filter>Engine\Scenes\Title Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="brotherhoodForeground.cpp">
+      <Filter>Engine\Scenes\Action Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="brotherhoodBackground2.cpp">
+      <Filter>Engine\Scenes\Action Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="brotherhoodVeryBackground.cpp">
+      <Filter>Engine\Scenes\Action Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="brotherhoodSky.cpp">
+      <Filter>Engine\Scenes\Action Scene</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

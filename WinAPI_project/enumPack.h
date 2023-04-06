@@ -12,6 +12,9 @@ enum class eSceneType
 
 enum class eLayerType
 {
+	background4,
+	background3,
+	background2,
 	background,
 	monster,
 	player,
@@ -20,6 +23,7 @@ enum class eLayerType
 	ground,
 	effect,
 	UI,
+	foreground,
 	end = 16,
 };
 
